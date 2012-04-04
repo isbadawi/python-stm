@@ -30,7 +30,7 @@ def get_schedule(route, stop, direction, day):
     return zip(hours, minutes)
 
 def _build_parser():
-    parser = argparse.ArgumentParser('command line interface to stm.info')
+    parser = argparse.ArgumentParser(description='command line interface to stm.info')
     parser.add_argument('-r', '--route', required=True, metavar='#',
         help='route number (e.g. 68)')
     parser.add_argument('-s', '--stop', required=True, metavar='#',
